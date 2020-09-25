@@ -1,4 +1,4 @@
-# Simple-Image-Classification-Model-
+# Simple-Image-Classification-Model
 Build your First Simple Image Classification Model 
 ### What is Image Classification?  
 There are potentially n number of categories in which a given image can be classified. Manually checking and classifying images is a very boring process.  
@@ -23,6 +23,26 @@ We have to define how our model will look and that requires answering questions
 •	What should be the activation function for each layer?
 •	How many hidden units should each layer have?
 These are essentially the hyperparameters of the model which play a MASSIVE part in deciding how good the predictions will be.
+### 3: Training the model  
+For training the model, we require:
+•	Training images and their corresponding true labels
+•	Validation images and their corresponding true labels 
+We also define the number of epochs in this step  
+### 4: Estimating the model’s performance
+Finally, we load the test data (images). We then predict the classes for these images using the trained model  
+### Steps to Build our Model
+1.	Setting up Google Colab
+2.	Importing Libraries
+3.	Loading and Preprocessing Data 
+4.	Creating a validation set
+5.	Defining the model structure 
+6.	Training the model 
+7.	Making predictions 
+#### 1: Setting up Google Colab
+we’re importing our data from a Google Drive link, and we need to add a code in our Google Colab in a new Python 3 notebook and write the following code:  
+'''
+!pip install PyDrive
+'''
 
 
 
