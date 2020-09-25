@@ -96,8 +96,8 @@ for i in tqdm(range(train.shape[0])):
 ```
 As it is a multi-class classification problem (? classes),...
 ```
-X = np.array(train_image)
-y=train['label'].values
+ X = np.array(train_image)
+ y = train['label'].values
 ```
 #### 4: Creating a validation set from the training data.
 ```
