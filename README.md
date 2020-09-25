@@ -1,8 +1,7 @@
-# Simple-Image-Classification-Model
+# Simple-Image-Classification-structure
 Build your First Simple Image Classification Model 
-### What is Image Classification?  
-There are potentially n number of categories in which a given image can be classified. Manually checking and classifying images is a very boring process.  
-The task becomes near impossible when we’re faced with a massive number of images, How useful would it be if we could automate this entire process and quickly label images per their corresponding class?
+### What is Image Classification in deep learning?  
+Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos,(Convolutional Neural Networks (CNNs) is the most popular neural network model being used for image classification problem.)
 ### Setting up the Structure of our Image Data  
 Our data needs to be in a particular format in order to solve an image classification problem.
 You should have 2 folders, one for the train set and the other for the test set. In the training set, you will have a .csv file and an image folder:
