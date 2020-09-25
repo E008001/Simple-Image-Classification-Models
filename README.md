@@ -70,17 +70,16 @@ download.GetContentFile('train_LbELtWX.zip')
 #### 2 : Import the libraries for our model 
 ```
 import keras
+import numpy as np
+import pandas as pd
+import pytorch
 from keras.models import Sequential
+from sklearn.model_selection import train_test_split
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from keras.utils import to_categorical
 from keras.preprocessing import image
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from keras.utils import to_categorical
-from tqdm import tqdm
 ```
 #### 3: loading the .csv file and data.
 ```
