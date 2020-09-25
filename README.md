@@ -4,5 +4,25 @@ Build your First Simple Image Classification Model
 There are potentially n number of categories in which a given image can be classified. Manually checking and classifying images is a very boring process.  
 The task becomes near impossible when we’re faced with a massive number of images, How useful would it be if we could automate this entire process and quickly label images per their corresponding class?
 ### Setting up the Structure of our Image Data  
+Our data needs to be in a particular format in order to solve an image classification problem.
+You should have 2 folders, one for the train set and the other for the test set. In the training set, you will have a .csv file and an image folder:
+•	The .csv file contains the names of all the training images and their corresponding true labels
+•	The image folder has all the training images.
+The .csv file in our test set is different from the one present in the training set. This test set .csv file contains the names of all the test images, but they do not have any corresponding labels. Our model will be trained on the images present in the training set and the label predictions will happen on the testing set images
+### the Process of Model Building  
+How an image classification model is typically designed. 
+.	Loading and pre-processing Data 
+.	Defining Model architecture 
+.	Training the model 
+.	Estimation of performance  
+### 1: Loading and pre-processing the data
+we train the model on the training data and validate it on the validation data. Once we are satisfied with the model’s performance on the validation set, we can use it for making predictions on the test data.
+### 2: Defining the model’s architecture  
+We have to define how our model will look and that requires answering questions 
+•	How many layers do we want?
+•	What should be the activation function for each layer?
+•	How many hidden units should each layer have?
+These are essentially the hyperparameters of the model which play a MASSIVE part in deciding how good the predictions will be.
+
 
 
