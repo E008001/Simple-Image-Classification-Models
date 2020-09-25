@@ -43,6 +43,73 @@ we’re importing our data from a Google Drive link, and we need to add a code i
 ```
 !pip install PyDrive
 ```
+This will install PyDrive. Now we import required libraries:
+```
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import auth
+
+```
+Next, we will create a drive variable to access Google Drive:
+```
+auth.authenticate_user()
+gauth = GoogleAuth()
+gauth.credentials = GoogleCredentials.get_application_default()
+drive = GoogleDrive(gauth)
+
+```
+To download the dataset, we will use the ID of the file uploaded on Google Drive:
+```
+download = drive.CreateFile({'id': '1BZOv422XJvxFUnGh-0xVeSvgFgqVY45q'})
+```
+Replace the ‘id’ in the above code with the ID of your file. Now we will download this file and unzip it:
+```
+download.GetContentFile('train_LbELtWX.zip')
+!unzip train_LbELtWX.zip
+```
+#### 2 : Import the libraries for our model 
+```
+import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+from keras.utils import to_categorical
+from keras.preprocessing import image
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from keras.utils import to_categorical
+from tqdm import tqdm
+```
+#### 3: loading the .csv file and data.
+```
+train = pd.read_csv('train.csv')
+```
+Next, we will read all the training images, store them in a list, and convert that list into a numpy array.
+```
+# We have grayscale images, so while loading the images we will keep grayscale=True, if you have RGB images, you should set grayscale as False
+train_image = []
+for i in tqdm(range(train.shape[0])):
+    img = image.load_img('train/'+train['id'][i].astype('str')+'.png', target_size=(28,28,1), grayscale=True)
+    img = image.img_to_array(img)
+    img = img/255
+    train_image.append(img)
+X = np.array(train_image)
+```
+As it is a multi-class classification problem (? classes),...
+```
+y=train['label'].values
+y = to_categorical(y)
+```
+#### 4: Creating a validation set from the training data.
+```
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, test_size=0.2)
+```
+ 
+#### 5: Define the model structure.
+
+
 
 
 
