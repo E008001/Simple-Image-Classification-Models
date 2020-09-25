@@ -40,9 +40,9 @@ Finally, we load the test data (images). We then predict the classes for these i
 7.	Making predictions 
 #### 1: Setting up Google Colab
 we’re importing our data from a Google Drive link, and we need to add a code in our Google Colab in a new Python 3 notebook and write the following code:  
-'''
+```
 !pip install PyDrive
-'''
+```
 
 
 
