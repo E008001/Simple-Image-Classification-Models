@@ -30,7 +30,7 @@ For training the model, we require:
 We also define the number of epochs in this step  
 ### 4: Estimating the model’s performance
 Finally, we load the test data (images). We then predict the classes for these images using the trained model  
-### Steps to Build our Model
+### Steps to Build the Model (in google colab)
 1.	Setting up Google Colab
 2.	Importing Libraries
 3.	Loading and Preprocessing Data 
