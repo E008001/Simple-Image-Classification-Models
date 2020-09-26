@@ -7,8 +7,8 @@ Our data needs to be in a particular format in order to solve an image classific
 You should have 2 folders, one for the train set and the other for the test set. In the training set, you will have a .csv file and an image folder: (in this case)
 •	The .csv file contains the names of all the training images and their corresponding true labels
 •	The image folder has all the training images.
-The .csv file in our test set is different from the one present in the training set. This test set .csv file contains the names of all the test images, but they do not have any corresponding labels. Our model will be trained on the images present in the training set and the label predictions will happen on the testing set images
-**In the other case, if our database does not have a .csv file**, after uploading the images, we will assign the labels separately to each of the folders containing different data classes based on the number of folders.
+The .csv file in our test set is different from the one present in the training set. This test set .csv file contains the names of all the test images, but they do not have any corresponding labels. Our model will be trained on the images present in the training set and the label predictions will happen on the testing set images  
+In the other case, **if our database does not have a .csv file**, after uploading the images, we will assign the labels separately to each of the folders containing different data classes based on the number of folders.
 ### the Process of Model Building  
 How an image classification model is typically designed. 
 .	Loading and pre-processing Data 
