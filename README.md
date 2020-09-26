@@ -4,7 +4,7 @@ Build your First Simple Image Classification Model
 Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos,(Convolutional Neural Networks (CNNs) is the most popular neural network model being used for image classification problem.)
 ### Set the Structure of Image Data  
 Our data needs to be in a particular format in order to solve an image classification problem.
-You should have 2 folders, one for the train set and the other for the test set. In the training set, you will have a .csv file and an image folder: (in this case)
+You should have 2 folders, one for the train set and the other for the test set. In the training set, you will have a .csv file and an image folder: (in this case)  
 •	The .csv file contains the names of all the training images and their corresponding true labels
 •	The image folder has all the training images.
 The .csv file in our test set is different from the one present in the training set. This test set .csv file contains the names of all the test images, but they do not have any corresponding labels. Our model will be trained on the images present in the training set and the label predictions will happen on the testing set images  
