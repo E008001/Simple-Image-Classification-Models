@@ -64,8 +64,8 @@ download = drive.CreateFile({'id': '1BZOv422XJvxFUnGh-0xVeSvgFgqVY45q'})
 ```
 Replace the ‘id’ in the above code with the ID of your file. Now we will download this file and unzip it:
 ```
-download.GetContentFile('train_LbELtWX.zip')
-!unzip train_LbELtWX.zip
+download.GetContentFile('train-lable.zip')
+!unzip train-lable.zip
 ```
 #### 2 : Import the libraries for our model 
 ```
