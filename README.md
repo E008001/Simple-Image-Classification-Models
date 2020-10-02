@@ -1,5 +1,6 @@
 ## a Simple Image Classification structure
 Build your First Simple Image Classification Model 
+
 ### What is Image Classification in deep learning?  
 Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos,(Convolutional Neural Networks (CNNs) is the most popular neural network model being used for image classification problem.)
 ### Set the Structure of Image Data  
@@ -105,7 +106,24 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, test_
 ```
  
 #### 5: Define the model structure.
-
+We will create a simple architecture with 3 dense hidden layer and an output layer.  
+```
+model = Sequential()
+model.add(Flatten(input_shape=(28,28,1)))
+model.add(Dense(40, activation='relu'))
+model.add(Dense(20, activation='relu'))
+model.add(Dense(10, activation='relu'))
+model.add(Dense(2, activation='softmax'))
+```
+And compile the model  
+```
+model.compile(loss='categorical_crossentropy',optimizer='Adam',metrics=['accuracy'])
+```
+### 6: Training the model.
+we will train the model on the training set images and validate it using the validation set.
+```
+model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
+```
 
 
 
