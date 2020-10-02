@@ -95,7 +95,7 @@ for i in tqdm(range(train.shape[0])):
     img = img/255
     train_image.append(img)
 ```
-As it is a multi-class classification problem (? classes),...
+We define X and the corresponding labels as y.
 ```
  X = np.array(train_image)
  y = train['label'].values
