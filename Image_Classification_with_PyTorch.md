@@ -4,5 +4,15 @@ to prepare data for optimum modeling results and then build a convolutional neur
 ### Importing Library and Data  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
-**torch.nn**.functional, which contains useful activation functions
+*torch.nn.functional*, which contains useful activation functions
 Dataset and Dataloader, PyTorch's data loading utility
+```
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import torch
+import torch.nn.functional as F
+import torchvision
+import torchvision.transforms as transforms
+from torch.utils.data import Dataset, DataLoader
+from sklearn.model_selection import train_test_split
+```
