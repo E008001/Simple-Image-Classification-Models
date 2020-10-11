@@ -1,2 +1,0 @@
-## image class
-we will build an image classification model from start to finish, beginning with exploratory data analysis (EDA), which will help you understand the shape of an image and the distribution of classes. You'll learn to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images according to whether they contain a cactus or not.
