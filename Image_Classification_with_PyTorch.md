@@ -16,3 +16,5 @@ import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
 ```
+### Defining the Model Structure  
+Models are defined in PyTorch by custom classes that extend the Module class. All the components of the models can be found in the torch.nn package.
