@@ -18,12 +18,12 @@ This is where convolutional neural networks can be really helpful. CNNs help to 
 in classifying the objects in that image. It starts by extracting low dimensional features (like edges) from the image, and then some high dimensional features like the shapes.
 
 **We use filters to extract features from the images and Pooling techniques to reduce the number of learnable parameters.**  
-### Brief Introduction to Convolutional Neural Networks - CNNs
-A CNN is primarily a stack of layers of convolutions, often interleaved with normalization and activation layers. The components of a convolutional neural network is:
-CNN — A stack of convolution layers
-Convolution Layer — A layer to detect certain features. Has a specific number of channels.
-Channels — Detects a specific feature in the image.
-Kernel/Filter — The feature to be detected in each channel. It has a fixed size, usually 3 x 3.
+### Brief to Convolutional Neural Networks - CNNs
+A CNN is primarily a stack of layers of convolutions, often interleaved with normalization and activation layers. The components of a convolutional neural network is:  
+CNN — A stack of convolution layers  
+Convolution Layer — A layer to detect certain features. Has a specific number of channels.  
+Channels — Detects a specific feature in the image.  
+Kernel/Filter — The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
