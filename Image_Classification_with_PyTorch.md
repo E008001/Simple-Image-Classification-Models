@@ -3,7 +3,21 @@ PyTorch, one of the newer Python-focused frameworks for designing deep learning 
 PyTorch is one of many frameworks that have been designed for this purpose and work well with Python, among popular ones like TensorFlow and Keras. It also offers strong support for GPUs.   
 
 we will build an image classification model,which will help to understand the shape of an image and the distribution of classes.   
-to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images.  
+to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images. 
+### Why Convolutional Neural Networks (CNNs)?
+why we need CNNs in the first place and how they are helpful???
+We can consider Convolutional Neural Networks, or CNNs, as feature extractors that help to extract features from images.
+1- This is the problem with artificial neural networks – they lose spatial orientation.
+### Large number of parameters
+Another problem with neural networks is the large number of parameters at play. Let’s say our image has a size of 28*28*3 –  so the parameters here will be 2,352. What if we have an image of size 224*224*3? The number of parameters here will be 150,528.
+And these parameters will only increase as we increase the number of hidden layers. So, the two major disadvantages of using artificial neural networks are:
+**Loses spatial orientation of the image  
+The number of parameters increases drastically**  
+So how do we deal with this problem? How can we preserve the spatial orientation as well as reduce the learnable parameters?
+This is where convolutional neural networks can be really helpful. CNNs help to extract features from the images which may be helpful in classifying the objects in that image. It starts by extracting low dimensional features (like edges) from the image, and then some high dimensional features like the shapes.
+
+**We use filters to extract features from the images and Pooling techniques to reduce the number of learnable parameters.**  
+
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
