@@ -22,3 +22,7 @@ from sklearn.model_selection import train_test_split
 ```
 ### Defining the Model Structure  
 Models are defined in PyTorch by custom classes that extend the Module class. All the components of the models can be found in the torch.nn package.
+### loading dataset  
+
+
+load
