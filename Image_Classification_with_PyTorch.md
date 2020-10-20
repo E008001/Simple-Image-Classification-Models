@@ -25,4 +25,7 @@ Models are defined in PyTorch by custom classes that extend the Module class. Al
 ### loading dataset  
 
 
-load
+load data
+1
+2
+3
