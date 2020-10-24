@@ -25,6 +25,7 @@ CNN — A stack of convolution layers
 Convolution Layer — A layer to detect certain features. Has a specific number of channels.  
 Channels — Detects a specific feature in the image.  
 Kernel/Filter — The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
