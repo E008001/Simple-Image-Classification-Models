@@ -52,6 +52,7 @@ Models are defined in PyTorch by custom classes that extend the Module class. Al
 
 
 load data
+load data 
 
 ### Creating a validation set and preprocessing the images
 ```
