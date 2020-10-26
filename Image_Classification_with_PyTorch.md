@@ -20,7 +20,10 @@ This is where convolutional neural networks can be really helpful. CNNs help to 
 in classifying the objects in that image. It starts by extracting low dimensional features (like edges) from the image, and then some high dimensional features like the shapes.
 
 **We use filters to extract features from the images and Pooling techniques to reduce the number of learnable parameters.**  
-### Brief to Convolutional Neural Networks - CNNs
+### Brief to Convolutional Neural Networks - CNNs  
+
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/CNNarchitec.jpg)  
+
 A CNN is primarily a stack of layers of convolutions, often interleaved with normalization and activation layers.(a 2d Convolution Layer is an multiplication between the input and the different filters, where filters and inputs are 2d matrices) The components of a convolutional neural network is:   
 CNN A stack of convolution layers  
 Convolution Layer  A layer to detect certain features. Has a specific number of channels.  
