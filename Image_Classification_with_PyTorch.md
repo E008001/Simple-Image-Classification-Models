@@ -47,7 +47,7 @@ Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2)
 
 ### Common architectures in convolutional neural networks.  
 AlexNet  
-VGG 16 
+VGG 16   
 U-Net  
 GoogLeNet   
 ResNet  
@@ -59,7 +59,7 @@ VGG Net use in very Deep Convolutional Networks for Large Scale Image Recognitio
 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/U-Net.png)  
 
-U-Net use for medical image segmentation  
+U-Net used to medical image segmentation  
 
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
