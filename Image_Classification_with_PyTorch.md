@@ -51,7 +51,8 @@ VGG 16
 GoogLeNet  
 ResNet  
 DenseNet  
-![image](aaa)
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/vgg16%20(1).png)  
+
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
