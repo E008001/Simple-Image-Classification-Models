@@ -27,8 +27,16 @@ Channels — Detects a specific feature in the image.
 Kernel/Filter — The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
   
   
-![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)
-### Pooling  
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)  
+```
+first_conv_layer = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, stride=1, padding=1)
+```
+We use the Conv2d layer because our image data is two dimensional.
+Firstly, a larger number of out_channels allows the layer to potentially learn more useful features about the input data  
+kernel_size is the size of the filter that is run over the images.  
+The stride argument indicates how far the filter is moved after each computation.  
+The padding argument indicates how much 0 padding is added to the edges of the data during computation.  
+### Pooling  layerts 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
