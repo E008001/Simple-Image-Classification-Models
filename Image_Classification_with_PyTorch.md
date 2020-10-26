@@ -31,11 +31,12 @@ Kernel/Filter — The feature to be detected in each channel. It has a fixed siz
 ```
 first_conv_layer = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, stride=1, padding=1)
 ```
-We use the Conv2d layer because our image data is two dimensional.
-Firstly, a larger number of out_channels allows the layer to potentially learn more useful features about the input data  
-kernel_size is the size of the filter that is run over the images.  
-The stride argument indicates how far the filter is moved after each computation.  
-The padding argument indicates how much 0 padding is added to the edges of the data during computation.  
+We use the Conv2d layer because our image data is two dimensional.  
+**in_channels**:The value of in_channels equal to the number of channels in the layer above or in the case of the first layer, the number of channels in the data.  
+**out_channels**: is the dimensionalityof the output space(the number of output filters in the convolution) larger number of out_channels allows the layer to potentially learn more useful features about the input data but the size of your CNN is a function of the number of in_channels/out_channels in each layer of your network and the number of layers. If you have a limited dataset, then you should aim to have a smaller network so that it can extract useful features from the data without overfitting.
+**kernel_size** is the size of the filter that is run over the images.  
+The **stride** argument indicates how far the filter is moved after each computation.  
+The **padding** argument indicates how much 0 padding is added to the edges of the data during computation.  
 ### Pooling  layerts 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)
 ### Importing Library  
