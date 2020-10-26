@@ -43,7 +43,15 @@ The **stride** argument indicates how far the filter is moved after each computa
 The **padding** argument indicates how much 0 padding is added to the edges of the data during computation.  
 ### Pooling  layerts  
 Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
-![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
+
+### Common architectures in convolutional neural networks.  
+AlexNet  
+VGG 16  
+GoogLeNet  
+ResNet  
+DenseNet  
+![image](aaa)
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
