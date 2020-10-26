@@ -76,10 +76,85 @@ import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
+``` 
+import 
+```
+# importing the libraries
+#import pandas as pd
+import numpy as np
+
+# for reading and displaying images
+from skimage.io import imread
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# for creating validation set
+from sklearn.model_selection import train_test_split
+
+# for evaluating the model
+from sklearn.metrics import accuracy_score
+from tqdm import tqdm
+
+# PyTorch libraries and modules
+import torch
+from torch.autograd import Variable
+from torch.nn import Linear, ReLU, CrossEntropyLoss, Sequential, Conv2d, MaxPool2d, Module, Softmax, BatchNorm2d, Dropout
+from torch.optim import Adam, SGD
+```
+### loading dataset  
+```
+# loading dataset
+train=pd.read_csv('Book20.csv')
+
+train.head(22)
+```
+```
+train_img = []
+for img_name in tqdm(train['Image_Name']):
+    # defining the image path
+    image_path =  str(img_name) + '.JPG'
+    
+    # reading the image
+    img = imread(image_path, as_gray=True )
+    img = resize(img, (img.shape[0] // 9, img.shape[1] // 9),anti_aliasing=True)
+                      
+    # normalizing the pixel values
+    img /= 255.0
+    # converting the type of pixel to float 32
+    img = img.astype('float32')
+    # appending the image into the list
+    train_img.append(img)
+    ```
+    
+    ```
+    # converting the list to numpy array
+train_x = np.array(train_img)
+# defining the target
+train_y = train['Lable'].values
+train_x.shape
+```
+
+```
+# create validation set
+train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 0.2)
+(train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
+```
+
+```
+# converting training images into torch format
+train_x = train_x.reshape(16, 1, 28, 28)
+train_x  = torch.from_numpy(train_x)
+
+# converting the target into torch format
+train_y = train_y.astype(int);
+train_y = torch.from_numpy(train_y)
+
+# shape of training data
+train_x.shape, train_y.shape
 ```
 ### Defining the Model Structure  
 Models are defined in PyTorch by custom classes that extend the Module class. All the components of the models can be found in the torch.nn package.
-### loading dataset  
+
 
 
 load data
