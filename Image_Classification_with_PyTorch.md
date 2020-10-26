@@ -4,7 +4,8 @@ PyTorch is one of many frameworks that have been designed for this purpose and w
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/con8.jpg)
 
 we will build an image classification model,which will help to understand the shape of an image and the distribution of classes.   
-to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images. 
+to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images.  
+
 ### Why Convolutional Neural Networks (CNNs)?
 why we need CNNs in the first place and how they are helpful???  
 **We can consider Convolutional Neural Networks, or CNNs, as feature extractors that help to extract features from images.**  
@@ -20,11 +21,11 @@ in classifying the objects in that image. It starts by extracting low dimensiona
 
 **We use filters to extract features from the images and Pooling techniques to reduce the number of learnable parameters.**  
 ### Brief to Convolutional Neural Networks - CNNs
-A CNN is primarily a stack of layers of convolutions, often interleaved with normalization and activation layers. The components of a convolutional neural network is:  
-CNN — A stack of convolution layers  
-Convolution Layer — A layer to detect certain features. Has a specific number of channels.  
-Channels — Detects a specific feature in the image.  
-Kernel/Filter — The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
+A CNN is primarily a stack of layers of convolutions, often interleaved with normalization and activation layers.(a 2d Convolution Layer is an multiplication between the input and the different filters, where filters and inputs are 2d matrices) The components of a convolutional neural network is:   
+CNN A stack of convolution layers  
+Convolution Layer  A layer to detect certain features. Has a specific number of channels.  
+Channels  Detects a specific feature in the image.  
+Kernel/Filter  The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
   
   
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)  
@@ -37,7 +38,8 @@ We use the Conv2d layer because our image data is two dimensional.
 **kernel_size** is the size of the filter that is run over the images.  
 The **stride** argument indicates how far the filter is moved after each computation.  
 The **padding** argument indicates how much 0 padding is added to the edges of the data during computation.  
-### Pooling  layerts 
+### Pooling  layerts  
+Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
