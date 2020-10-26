@@ -116,7 +116,7 @@ for img_name in tqdm(train['Image_Name']):
     
     # reading the image
     img = imread(image_path, as_gray=True )
-    img = resize(img, (img.shape[0] // 9, img.shape[1] // 9),anti_aliasing=True)
+    img = resize(img, (img.shape[0] // 8, img.shape[1] // 8))
                       
     # normalizing the pixel values
     img /= 255.0
@@ -157,8 +157,6 @@ Models are defined in PyTorch by custom classes that extend the Module class. Al
 
 
 
-load data
-load data 
 
 ### Creating a validation set and preprocessing the images
 ```
