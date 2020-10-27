@@ -164,7 +164,7 @@ train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 
 (train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
 ```
 
-[an example of image classification in 2 classes]()
+[an example of image classification in 2 classes](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb)
 
 
 
