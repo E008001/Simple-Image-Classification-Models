@@ -164,4 +164,4 @@ train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 
 (train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
 ```
 
-![image]()
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/hidden1.png)
