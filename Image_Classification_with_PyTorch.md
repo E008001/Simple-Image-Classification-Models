@@ -165,6 +165,8 @@ train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 
 ```
 ![image](https://raw.githubusercontent.com/E008001/Simple-Image-Classification-Model/master/pattern.webp)
 
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/pattern.gif)
+
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/pattern2.png)
 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/cnn-archit1.jpg)  
