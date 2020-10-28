@@ -183,3 +183,7 @@ train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/1D-convolutional-example_2x.png)
 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/2D-convolution.png)
+
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/3d-convolution.gif)
+
+
