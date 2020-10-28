@@ -139,7 +139,7 @@ train_x.shape
 train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 0.2)
 (train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
 ```
-
+**convert the images and the targets into torch format**:
 ```
 # converting training images into torch format
 train_x = train_x.reshape(16, 1, 28, 28)
@@ -152,18 +152,70 @@ train_y = torch.from_numpy(train_y)
 # shape of training data
 train_x.shape, train_y.shape
 ```
+convert the validation images:
+```
+# converting validation images into torch format
+val_x = val_x.reshape(6000, 1, 28, 28)
+val_x  = torch.from_numpy(val_x)
+# converting the target into torch format
+val_y = val_y.astype(int);
+val_y = torch.from_numpy(val_y)
+# shape of validation data
+val_x.shape, val_y.shape
+```
+
+
 ### Defining the Model Structure  
-Models are defined in PyTorch by custom classes that extend the Module class. All the components of the models can be found in the torch.nn package.
-
-
-
-
-### Creating a validation set and preprocessing the images
+use a simple CNN architecture with 2 convolutional layers to extract features from the images.
+then using a fully connected dense layer to classify those features into their categories.
 ```
-train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 0.1)
-(train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
+class Net(Module):   
+    def __init__(self):
+        super(Net, self).__init__()
+        self.cnn_layers = Sequential(
+            # Defining a 2D convolution layer
+            Conv2d(1, 4, kernel_size=3, stride=1, padding=1),
+            BatchNorm2d(4),
+            ReLU(inplace=True),
+            MaxPool2d(kernel_size=2, stride=2),
+            # Defining another 2D convolution layer
+            Conv2d(4, 4, kernel_size=3, stride=1, padding=1),
+            BatchNorm2d(4),
+            ReLU(inplace=True),
+            MaxPool2d(kernel_size=2, stride=2),
+        )
+
+        self.linear_layers = Sequential(
+            Linear(4 * 7 * 7, 10)
+        )
+
+    # Defining the forward pass    
+    def forward(self, x):
+        x = self.cnn_layers(x)
+        x = x.view(x.size(0), -1)
+        x = self.linear_layers(x)
+        return x
+```
+define the optimizer and the loss function for the model:
+```
+	# defining the model
+	model = Net()
+	# defining the optimizer
+	optimizer = Adam(model.parameters(), lr=0.07)
+	# defining the loss function
+	criterion = CrossEntropyLoss()
+	# checking if GPU is available
+	if torch.cuda.is_available():
+	    model = model.cuda()
+	    criterion = criterion.cuda()
+	   
+	print(model)
 ```
 
+
+
+
+https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb
 [an example of image classification in 2 classes](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb)
 
 
