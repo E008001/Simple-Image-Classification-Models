@@ -77,7 +77,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
 ``` 
-import 
+import the required libraries
 ```
 # importing the libraries
 #import pandas as pd
@@ -133,9 +133,9 @@ train_x = np.array(train_img)
 train_y = train['Lable'].values
 train_x.shape
 ```
-
+#### Creating a validation set 
+we use 20% data in the validation set and the remaining in the training set.
 ```
-# create validation set
 train_x, val_x, train_y, val_y = train_test_split(train_x, train_y, test_size = 0.2)
 (train_x.shape, train_y.shape), (val_x.shape, val_y.shape)
 ```
@@ -215,7 +215,7 @@ define the optimizer and the loss function for the model:
 
 
 
-https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb
+https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb  
 [an example of image classification in 2 classes](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/torch-test-10.ipynb)
 
 
