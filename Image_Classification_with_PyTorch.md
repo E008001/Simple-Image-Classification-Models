@@ -29,6 +29,38 @@ CNN A stack of convolution layers
 Convolution Layer  A layer to detect certain features. Has a specific number of channels.  
 Channels  Detects a specific feature in the image.  
 Kernel/Filter  The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>W</mi>
+    <mrow>
+      <mi>o</mi>
+      <mi>u</mi>
+      <mi>t</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <msub>
+        <mi>W</mi>
+        <mrow>
+          <mi>i</mi>
+          <mi>n</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2013;</mo>
+      <mi>F</mi>
+      <mo>+</mo>
+      <mn>2</mn>
+      <mi>P</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mi>S</mi>
+  </mfrac>
+  <mo>+</mo>
+  <mn>1</mn>
+</math>
   
   
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)  
@@ -44,6 +76,7 @@ The **padding** argument indicates how much 0 padding is added to the edges of t
 ### Pooling  layerts  
 Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
+
 
 ### Common architectures in convolutional neural networks.  
 AlexNet  
