@@ -1,5 +1,5 @@
 ## a Simple Image Classification structure
-Build your First Simple Image Classification Model 
+Simple Image Classification Model 
 
 ### What is Image Classification in deep learning?  
 Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos,(Convolutional Neural Networks (CNNs) is the most popular neural network model being used for image classification problem.)
