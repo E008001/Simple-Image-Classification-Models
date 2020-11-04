@@ -5,7 +5,7 @@ PyTorch is one of many frameworks that have been designed for this purpose and w
 
 we will build an image classification model,which will help to understand the shape of an image and the distribution of classes.   
 to prepare data for optimum modeling results and then build a convolutional neural network (CNN) that will classify images.  
-[10-model-deseas-planet](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/10-model-deseasplanet.ipynb)
+[10-model-deseas-planet](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/10-model-deseasplanet.ipynb)  
 https://colab.research.google.com/drive/1hWgNBvqul3ZgH6JENxvGvdgakpxwD6wQ
 ### Why Convolutional Neural Networks (CNNs)?
 why we need CNNs in the first place and how they are helpful???  
