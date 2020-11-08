@@ -1,4 +1,4 @@
-## a Simple Image Classification structure
+## A Simple Image Classification Structure
 Simple Image Classification Model  
 [Image_Classification_with_PyTorch](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/Image_Classification_with_PyTorch.md)
 
