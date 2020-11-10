@@ -30,10 +30,6 @@ CNN A stack of convolution layers
 Convolution Layer  A layer to detect certain features. Has a specific number of channels.  
 Channels  Detects a specific feature in the image.  
 Kernel/Filter  The feature to be detected in each channel. It has a fixed size, usually 3 x 3.  
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <msub>
-   
-  
   
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/element-wise.jpg)  
 ```
