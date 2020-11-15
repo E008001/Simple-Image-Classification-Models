@@ -44,7 +44,8 @@ The **padding** argument indicates how much 0 padding is added to the edges of t
 ### Pooling  layerts  
 Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
-
+The output size of any dimension from either a convolutional filtering or pooling operation can be calculated by the following equation:  
+![image](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/padding%20size.png)  
 
 ### Common architectures in convolutional neural networks.  
 AlexNet  
