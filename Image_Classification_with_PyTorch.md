@@ -37,20 +37,28 @@ first_conv_layer = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, stri
 ```
 We use the Conv2d layer because our image data is two dimensional.  
 **in_channels**:The value of in_channels equal to the number of channels in the layer above or in the case of the first layer, the number of channels in the data.  
-**out_channels**: is the dimensionalityof the output space(the number of output filters in the convolution) larger number of out_channels allows the layer to potentially learn more useful features about the input data but the size of your CNN is a function of the number of in_channels/out_channels in each layer of your network and the number of layers. If you have a limited dataset, then you should aim to have a smaller network so that it can extract useful features from the data without overfitting.
-**kernel_size** is the size of the filter that is run over the images.  
+**out_channels**: is the dimensionalityof the output space(the number of output filters in the convolution) larger number of out_channels allows the layer to potentially learn more useful features about the input data but the size of your CNN is a function of the number of in_channels/out_channels in each layer of your network and the number of layers. If you have a limited dataset, then you should aim to have a smaller network so that it can extract useful features from the data without overfitting.  
+The **kernel_size** is the size of the filter that is run over the images.  
+If we change the kernel_size to 5, the context would be expanded to include pixels adjacent to the central pixel.
+
 The **stride** argument indicates how far the filter is moved after each computation.  
+With a stride of 1 , a computation will be done for every pixel in the image.
+With a stride of 2, every second pixel will have computation done on it, and the output data will have a height and width that is half the size of the input data.
+It is not recommended changing the stride from 1 without understanding of how this impacts the data moving through the network.  
+
 The **padding** argument indicates how much 0 padding is added to the edges of the data during computation.  
-### Pooling  layerts  
-Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
-![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
+
 The output size of any dimension from either a convolutional filtering or pooling operation can be calculated by the following equation:  
 ![image](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/padding%20size.png)  
 F is the filter size, P is the padding and S is the stride.  
 If we wish to keep our input and output dimensions the same, with a filter size of 5 and a stride of 1, from the above formula we need a padding of 2.  
 therfore the padding should be equal to the kernel size minus 1 divided by 2.
 So for a kernel size of 3, we would have a padding of 1. In a kernel size of 5, we would have a padding of 2. In a kernel size of 7, we would have a padding of 3
-This prevents the image shrinking as it moves through the layers.
+This prevents the image shrinking as it moves through the layers.  
+
+### Pooling  layerts  
+Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
+![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
 
 
 
