@@ -47,7 +47,11 @@ Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2)
 The output size of any dimension from either a convolutional filtering or pooling operation can be calculated by the following equation:  
 ![image](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/padding%20size.png)  
 F is the filter size, P is the padding and S is the stride.  
-If we wish to keep our input and output dimensions the same, with a filter size of 5 and a stride of 1, from the above formula we need a padding of 2 and for filter of size 3 padding=1 and for filter 7*7 padding=3.  
+If we wish to keep our input and output dimensions the same, with a filter size of 5 and a stride of 1, from the above formula we need a padding of 2.  
+therfore the padding should be equal to the kernel size minus 1 divided by 2.
+So for a kernel size of 3, we would have a padding of 1. In a kernel size of 5, we would have a padding of 2. In a kernel size of 7, we would have a padding of 3
+This prevents the image shrinking as it moves through the layers.
+
 
 
 ### Common architectures in convolutional neural networks.  
