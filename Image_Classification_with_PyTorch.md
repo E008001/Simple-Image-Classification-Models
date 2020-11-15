@@ -40,14 +40,11 @@ We use the Conv2d layer because our image data is two dimensional.
 **out_channels**: is the dimensionalityof the output space(the number of output filters in the convolution) larger number of out_channels allows the layer to potentially learn more useful features about the input data but the size of your CNN is a function of the number of in_channels/out_channels in each layer of your network and the number of layers. If you have a limited dataset, then you should aim to have a smaller network so that it can extract useful features from the data without overfitting.  
 The **kernel_size** is the size of the filter that is run over the images.  
 If we change the kernel_size to 5, the context would be expanded to include pixels adjacent to the central pixel.
-
 The **stride** argument indicates how far the filter is moved after each computation.  
 With a stride of 1 , a computation will be done for every pixel in the image.
-With a stride of 2, every second pixel will have computation done on it, and the output data will have a height and width that is half the size of the input data.
+With a stride of 2, every second pixel will have computation done on it, and the output data will have a height and width that is half the size of the input data.  
 It is not recommended changing the stride from 1 without understanding of how this impacts the data moving through the network.  
-
 The **padding** argument indicates how much 0 padding is added to the edges of the data during computation.  
-
 The output size of any dimension from either a convolutional filtering or pooling operation can be calculated by the following equation:  
 ![image](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/padding%20size.png)  
 F is the filter size, P is the padding and S is the stride.  
