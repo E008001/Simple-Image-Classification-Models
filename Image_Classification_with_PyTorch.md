@@ -46,6 +46,9 @@ Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2)
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
 The output size of any dimension from either a convolutional filtering or pooling operation can be calculated by the following equation:  
 ![image](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/padding%20size.png)  
+F is the filter size, P is the padding and S is the stride.  
+If we wish to keep our input and output dimensions the same, with a filter size of 5 and a stride of 1, from the above formula we need a padding of 2 and for filter of size 3 padding=1 and for filter 7*7 padding=3.  
+
 
 ### Common architectures in convolutional neural networks.  
 AlexNet  
