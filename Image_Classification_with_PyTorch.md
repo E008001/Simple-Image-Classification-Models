@@ -206,7 +206,7 @@ class Net(Module):
         )
 
         self.linear_layers = Sequential(
-            Linear(4 * 7 * 7, 10)
+            Linear(4 * 7 * 7, 2)
         )
 
     # Defining the forward pass    
@@ -257,7 +257,7 @@ class CNN(nn.Module):
     out = self.fc2(out)
     return out
 ```	
-
+ Note that, after self.layer2, we apply a reshaping function to out, which flattens the data dimensions from 7 x 7 x 64 into 3164 x 1
 ```
 model = CNN()
 
