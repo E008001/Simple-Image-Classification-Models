@@ -79,6 +79,8 @@ VGG Net use in very Deep Convolutional Networks for Large Scale Image Recognitio
 
 U-Net used to medical image segmentation  
 
+### Implementing Convolutional Neural Networks in PyTorch  
+how to create Convolutional Neural Networks in PyTorch? 
 ### Importing Library  
 To begin, import the **torch** and **torchvision** frameworks and their libraries with **numpy**, **pandas**, and **sklearn**. Libraries and functions used in the code below include:
 transforms, for basic image transformations
