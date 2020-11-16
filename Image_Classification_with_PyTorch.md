@@ -54,6 +54,10 @@ So for a kernel size of 3, we would have a padding of 1. In a kernel size of 5, 
 This prevents the image shrinking as it moves through the layers.  
 
 ### Pooling  layerts  
+There are two benefits to using pooling in CNNs
+It reduces the number of parameters by **down-sampling** and It makes feature detection more robust to object orientation and scale changes  
+The most common type of pooling is called max pooling, and it applies the max function over the window  
+
 Maxpool Layers (2x2 filter) is about taking the maximum element of a small (2x2) square that we delimitate from the input  
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/maxpool.gif)  
 
