@@ -52,6 +52,7 @@ If we wish to keep our input and output dimensions the same, with a filter size 
 therfore the padding should be equal to the kernel size minus 1 divided by 2.
 So for a kernel size of 3, we would have a padding of 1. In a kernel size of 5, we would have a padding of 2. In a kernel size of 7, we would have a padding of 3
 This prevents the image shrinking as it moves through the layers.  
+**why we use odd-size kernel and smaller kernel size mostly??**
 
 ### Pooling  layerts  
 There are two benefits to using pooling in CNNs
