@@ -55,6 +55,7 @@ This prevents the image shrinking as it moves through the layers.
 **why we use odd-size kernel and smaller kernel size mostly??**  
 https://towardsdatascience.com/deciding-optimal-filter-size-for-cnns-d6f7b56f9363  
 https://icecreamlabs.com/2018/08/19/3x3-convolution-filters%E2%80%8A-%E2%80%8Aa-popular-choice/  
+https://datascience.stackexchange.com/questions/23183/why-convolutions-always-use-odd-numbers-as-filter-size  
 
 ### Pooling  layerts  
 There are two benefits to using pooling in CNNs
