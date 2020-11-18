@@ -74,6 +74,7 @@ U-Net
 GoogLeNet   
 ResNet  
 DenseNet  
+https://pytorch.org/docs/stable/torchvision/models.html  
 
 ![image](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/vgg16%20(1).png)  
 
