@@ -127,7 +127,10 @@ model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
 ```
 [an example of binary classification](https://github.com/E008001/Simple-Image-Classification-Model/blob/master/binary-classification.ipynb)
 
-[MNIST DATASET Model](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/MNIST_CNN_Model.ipynb)
+[Convolutional Neural Networks Model for training MNIST Dataset Model](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/MNIST_CNN_Model.ipynb)
+
+[MNIST Classification with a Fully-Connected Neural Network](https://github.com/E008001/Simple-Image-Classification-Models/blob/master/MNIST_Sequential_Model.ipynb)
+
 
 
 
